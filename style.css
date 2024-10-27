@@ -1,37 +1,38 @@
 /* Global Styles */
 body {
-    font-family: Arial, sans-serif; /* A clean, modern font */
+    font-family: 'Arial', sans-serif; /* Changed to a clean, readable font */
     margin: 0;
     padding: 0;
     color: #333;
-    background-color: #f0f0f0; /* Light gray background for a soft look */
+    background: linear-gradient(to right, #ffca3a, #8ac926); /* Gradient background for a vibrant look */
     line-height: 1.6;
 }
 
 header {
-    background-color: #1982c4; /* Strong blue for the header */
-    color: white;
-    padding: 20px 0;
+    background-color: #ff595e; /* Bright header color */
+    padding: 20px;
     text-align: center;
 }
 
-header h1 {
+h1 {
+    color: white; /* White text for the header */
     margin: 0;
 }
 
 nav ul {
-    list-style-type: none;
+    list-style: none;
     padding: 0;
 }
 
 nav ul li {
-    display: inline; /* Horizontal navigation */
+    display: inline;
     margin: 0 15px;
 }
 
 nav a {
-    color: white; /* White text for links */
-    text-decoration: none; /* No underline */
+    text-decoration: none;
+    color: white; /* White links for the nav */
+    font-weight: bold;
 }
 
 nav a:hover {
@@ -40,55 +41,27 @@ nav a:hover {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(45deg, rgba(255, 202, 58, 0.9), rgba(138, 201, 38, 0.9)); /* Bright gradient background */
-    color: white;
+    background: rgba(255, 255, 255, 0.8); /* Slightly transparent white background */
+    color: #333;
     text-align: center;
-    padding: 100px 20px;
-}
-
-.hero h2 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-}
-
-.hero p {
-    font-size: 1.5rem;
-    margin-bottom: 30px;
-}
-
-.hero .cta-button {
-    background-color: #ff595e; /* Button color */
-    color: white;
-    padding: 15px 40px;
-    border-radius: 30px;
-    font-size: 1.3rem;
-    cursor: pointer;
-    border: none;
-    transition: transform 0.3s ease;
-}
-
-.hero .cta-button:hover {
-    background-color: #ffca3a; /* Hover effect */
-    transform: scale(1.1); /* Slight enlargement on hover */
+    padding: 50px 20px;
+    border-radius: 10px; /* Rounded corners for a softer look */
+    margin: 20px auto;
+    max-width: 800px; /* Limit the width */
 }
 
 /* Why Movement Matters Section */
 .why-movement-matters {
-    background-color: #ffffff; /* White background for contrast */
+    background-color: #ffca3a;
     padding: 50px 20px;
     text-align: center;
-    margin: 20px 0;
+    border-top: 5px solid #1982c4;
+    border-bottom: 5px solid #ff595e;
 }
 
 .why-movement-matters h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
-}
-
-.why-movement-matters p {
-    font-size: 1.3rem;
-    max-width: 800px;
-    margin: 0 auto 40px;
 }
 
 .benefits {
@@ -98,23 +71,22 @@ nav a:hover {
     gap: 20px;
 }
 
-.benefits div {
-    background-color: #ff595e; /* Red-pink for benefits boxes */
-    padding: 20px;
-    border-radius: 10px;
-    color: white;
-    text-align: center;
-    width: 200px; /* Fixed width for benefit boxes */
+.benefits ul {
+    list-style: none;
+    padding: 0;
 }
 
-.benefits img {
-    width: 50px; /* Adjust icon size */
-    height: 50px;
+.benefits li {
+    margin: 15px 0;
+    font-size: 1.2rem;
+    background-color: #ff595e;
+    padding: 10px;
+    border-radius: 20px;
+    color: white;
 }
 
 /* Explore Pages Section */
 .explore-pages {
-    background-color: #1982c4; /* Blue background for explore section */
     padding: 60px 20px;
     color: white;
     text-align: center;
@@ -129,34 +101,26 @@ nav a:hover {
 }
 
 .explore-link {
-    background: #ffca3a; /* Yellow background for links */
+    background: #1982c4;
     padding: 30px;
     border-radius: 20px;
     width: 200px;
     margin-bottom: 20px;
-    transition: transform 0.3s ease, background-color 0.3s ease;
+    transition: transform 0.3s ease;
 }
 
 .explore-link:hover {
-    background-color: #ff595e; /* Hover effect */
-}
-
-.explore-link h3 {
-    margin-top: 10px;
-    font-size: 1.5rem;
-}
-
-.explore-link p {
-    margin-top: 10px;
-    font-size: 1.1rem;
+    background-color: #ffca3a;
+    transform: scale(1.05); /* Scale up on hover */
 }
 
 /* Footer */
 footer {
-    background-color: #ff595e; /* Footer color */
+    background-color: #ff595e;
     color: white;
     text-align: center;
-    padding: 30px 0;
+    padding: 20px 0;
+    border-top: 5px solid #8ac926;
 }
 
 footer p {
