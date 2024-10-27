@@ -14,13 +14,13 @@ h1, h2, h3 {
 }
 
 a {
-    text-decoration: underline; /* Adds underline */
+    text-decoration: underline; /* Underline the links */
     color: inherit; /* Keeps the same color as surrounding text */
 }
 
 a:hover {
-    color: #ffca3a; /* Changes color to yellow on hover */
-    text-decoration: none; /* Removes underline on hover for a subtle effect */
+    color: #ffca3a; /* Yellow on hover */
+    text-decoration: none; /* Removes underline on hover for effect */
 }
 
 /* Hero Section */
