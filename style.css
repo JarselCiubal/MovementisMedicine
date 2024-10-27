@@ -1,129 +1,40 @@
 /* Global Styles */
 body {
-    font-family: 'Arial', sans-serif; /* Changed to a clean, readable font */
+    font-family: 'Comic Sans MS', cursive, sans-serif;
     margin: 0;
     padding: 0;
     color: #333;
-    background: linear-gradient(to right, #ffca3a, #8ac926); /* Gradient background for a vibrant look */
+    background-color: #fff5e6;
     line-height: 1.6;
 }
 
-header {
-    background-color: #ff595e; /* Bright header color */
-    padding: 20px;
-    text-align: center;
-}
-
-h1 {
-    color: white; /* White text for the header */
-    margin: 0;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav a {
-    text-decoration: none;
-    color: white; /* White links for the nav */
+h1, h2, h3 {
+    color: #ff595e;
     font-weight: bold;
 }
 
-nav a:hover {
-    text-decoration: underline; /* Underline on hover */
+a {
+    text-decoration: underline; /* Underline links instead of coloring them */
+    color: #1982c4; /* Default color for links */
+}
+
+a:hover {
+    color: #ffca3a; /* Yellow on hover */
 }
 
 /* Hero Section */
 .hero {
-    background: rgba(255, 255, 255, 0.8); /* Slightly transparent white background */
-    color: #333;
-    text-align: center;
-    padding: 50px 20px;
-    border-radius: 10px; /* Rounded corners for a softer look */
-    margin: 20px auto;
-    max-width: 800px; /* Limit the width */
-}
-
-/* Why Movement Matters Section */
-.why-movement-matters {
-    background-color: #ffca3a;
-    padding: 50px 20px;
-    text-align: center;
-    border-top: 5px solid #1982c4;
-    border-bottom: 5px solid #ff595e;
-}
-
-.why-movement-matters h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-}
-
-.benefits {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.benefits ul {
-    list-style: none;
-    padding: 0;
-}
-
-.benefits li {
-    margin: 15px 0;
-    font-size: 1.2rem;
-    background-color: #ff595e;
-    padding: 10px;
-    border-radius: 20px;
-    color: white;
-}
-
-/* Explore Pages Section */
-.explore-pages {
-    padding: 60px 20px;
+    background: linear-gradient(45deg, #ffca3a, #8ac926);
     color: white;
     text-align: center;
+    padding: 100px 20px;
+    margin-bottom: 50px;
+    border-bottom: 5px solid #1982c4;
 }
 
-.page-links {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    max-width: 900px;
-    margin: 0 auto;
+.hero img {
+    max-width: 100%;
+    height: auto;
 }
 
-.explore-link {
-    background: #1982c4;
-    padding: 30px;
-    border-radius: 20px;
-    width: 200px;
-    margin-bottom: 20px;
-    transition: transform 0.3s ease;
-}
-
-.explore-link:hover {
-    background-color: #ffca3a;
-    transform: scale(1.05); /* Scale up on hover */
-}
-
-/* Footer */
-footer {
-    background-color: #ff595e;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-    border-top: 5px solid #8ac926;
-}
-
-footer p {
-    margin: 0;
-    font-size: 1.2rem;
-}
+/*
