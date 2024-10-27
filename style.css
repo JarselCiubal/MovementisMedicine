@@ -1,46 +1,155 @@
+/* Global Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
+    color: #333;
     background-color: #f4f4f4;
+    line-height: 1.6;
 }
 
-header {
-    background-color: #4CAF50;
+h1, h2, h3 {
+    color: #2a9d8f;
+}
+
+a {
+    text-decoration: none;
+    color: #264653;
+}
+
+/* Hero Section */
+.hero {
+    background: #264653;
     color: white;
+    text-align: center;
+    padding: 100px 20px;
+    margin-bottom: 40px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.hero .cta-button {
+    background-color: #e76f51;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border: none;
+}
+
+.hero .cta-button:hover {
+    background-color: #f4a261;
+}
+
+/* Why Movement Matters Section */
+.why-movement-matters {
+    background-color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.why-movement-matters h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.why-movement-matters p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto 40px;
+}
+
+.benefits {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.benefits ul {
+    list-style: none;
+    padding: 0;
+}
+
+.benefits li {
+    margin: 10px 0;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+}
+
+.benefits li img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+/* Explore Pages Section */
+.explore-pages {
+    background-color: #2a9d8f;
+    padding: 50px 20px;
+    color: white;
+    text-align: center;
+}
+
+.page-links {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.explore-link {
+    background: #f4a261;
     padding: 20px;
-    text-align: center;
+    border-radius: 10px;
+    width: 200px;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
 }
 
-h1 {
-    margin: 0;
+.explore-link:hover {
+    background-color: #e76f51;
 }
 
-section {
-    margin: 20px;
+.explore-link h3 {
+    margin-top: 10px;
+    font-size: 1.3rem;
 }
 
-h2, h3 {
-    color: #4CAF50;
+.explore-link p {
+    margin-top: 10px;
+    font-size: 1rem;
 }
 
-ul {
-    list-style-type: square;
-    padding-left: 20px;
-}
-
+/* Footer */
 footer {
-    background-color: #333;
+    background-color: #264653;
     color: white;
     text-align: center;
-    padding: 10px 0;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+    padding: 20px 0;
 }
 
-form input, form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+footer .footer-link {
+    color: #f4a261;
+    font-weight: bold;
+}
+
+footer .footer-link:hover {
+    color: #e76f51;
 }
