@@ -87,31 +87,23 @@ a:hover {
     gap: 20px;
 }
 
-.benefits ul {
-    list-style: none;
-    padding: 0;
-}
-
-.benefits li {
-    margin: 15px 0;
-    font-size: 1.2rem;
-    display: flex;
-    align-items: center;
+.benefits div {
     background-color: #ff595e;
-    padding: 10px;
+    padding: 20px;
     border-radius: 20px;
     color: white;
     transition: transform 0.3s ease;
+    width: 200px; /* Fixed width for benefit boxes */
+    text-align: center;
 }
 
-.benefits li:hover {
+.benefits div:hover {
     transform: translateY(-5px); /* Lifts the item slightly on hover */
 }
 
-.benefits li img {
-    width: 35px;
-    height: 35px;
-    margin-right: 10px;
+.benefits img {
+    width: 50px; /* Adjust icon size */
+    height: 50px;
 }
 
 /* Explore Pages Section */
@@ -166,15 +158,6 @@ footer {
 footer p {
     margin: 0;
     font-size: 1.2rem;
-}
-
-footer .footer-link {
-    color: #1982c4;
-    font-weight: bold;
-}
-
-footer .footer-link:hover {
-    color: #ffca3a;
 }
 
 /* Animations */
