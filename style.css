@@ -1,52 +1,63 @@
 /* Global Styles */
 body {
-    font-family: 'Comic Sans MS', cursive, sans-serif; /* Fun font choice */
+    font-family: Arial, sans-serif; /* A clean, modern font */
     margin: 0;
     padding: 0;
     color: #333;
-    background: linear-gradient(to bottom right, #ffcc00, #ff4f00); /* Bright gradient background */
+    background-color: #f0f0f0; /* Light gray background for a soft look */
     line-height: 1.6;
 }
 
-h1, h2, h3 {
-    color: #fff; /* White for headers for better contrast */
-    font-weight: bold;
+header {
+    background-color: #1982c4; /* Strong blue for the header */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
 }
 
-a {
-    text-decoration: underline; /* Underline the links */
-    color: inherit; /* Keeps the same color as surrounding text */
+header h1 {
+    margin: 0;
 }
 
-a:hover {
-    color: #ffca3a; /* Yellow on hover */
-    text-decoration: none; /* Removes underline on hover for effect */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline; /* Horizontal navigation */
+    margin: 0 15px;
+}
+
+nav a {
+    color: white; /* White text for links */
+    text-decoration: none; /* No underline */
+}
+
+nav a:hover {
+    text-decoration: underline; /* Underline on hover */
 }
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(45deg, rgba(255, 202, 58, 0.8), rgba(138, 201, 38, 0.8)); /* Bold gradient background */
+    background: linear-gradient(45deg, rgba(255, 202, 58, 0.9), rgba(138, 201, 38, 0.9)); /* Bright gradient background */
     color: white;
     text-align: center;
     padding: 100px 20px;
-    margin-bottom: 50px;
-    border-bottom: 5px solid #1982c4; /* Adds a striking bottom border */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Adds shadow for depth */
 }
 
-.hero h1 {
-    font-size: 3.5rem;
+.hero h2 {
+    font-size: 3rem;
     margin-bottom: 20px;
-    animation: bounce 2s infinite; /* Fun bounce animation */
 }
 
 .hero p {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     margin-bottom: 30px;
 }
 
 .hero .cta-button {
-    background-color: #1982c4;
+    background-color: #ff595e; /* Button color */
     color: white;
     padding: 15px 40px;
     border-radius: 30px;
@@ -57,17 +68,16 @@ a:hover {
 }
 
 .hero .cta-button:hover {
-    background-color: #ff595e;
+    background-color: #ffca3a; /* Hover effect */
     transform: scale(1.1); /* Slight enlargement on hover */
 }
 
 /* Why Movement Matters Section */
 .why-movement-matters {
-    background-color: rgba(255, 202, 58, 0.9);
+    background-color: #ffffff; /* White background for contrast */
     padding: 50px 20px;
     text-align: center;
-    border-top: 5px solid #1982c4;
-    border-bottom: 5px solid #ff595e;
+    margin: 20px 0;
 }
 
 .why-movement-matters h2 {
@@ -89,17 +99,12 @@ a:hover {
 }
 
 .benefits div {
-    background-color: #ff595e;
+    background-color: #ff595e; /* Red-pink for benefits boxes */
     padding: 20px;
-    border-radius: 20px;
+    border-radius: 10px;
     color: white;
-    transition: transform 0.3s ease;
-    width: 200px; /* Fixed width for benefit boxes */
     text-align: center;
-}
-
-.benefits div:hover {
-    transform: translateY(-5px); /* Lifts the item slightly on hover */
+    width: 200px; /* Fixed width for benefit boxes */
 }
 
 .benefits img {
@@ -109,7 +114,7 @@ a:hover {
 
 /* Explore Pages Section */
 .explore-pages {
-    background-color: rgba(138, 201, 38, 0.9);
+    background-color: #1982c4; /* Blue background for explore section */
     padding: 60px 20px;
     color: white;
     text-align: center;
@@ -124,7 +129,7 @@ a:hover {
 }
 
 .explore-link {
-    background: #1982c4;
+    background: #ffca3a; /* Yellow background for links */
     padding: 30px;
     border-radius: 20px;
     width: 200px;
@@ -133,8 +138,7 @@ a:hover {
 }
 
 .explore-link:hover {
-    background-color: #ffca3a;
-    transform: rotate(3deg); /* Adds a slight rotation on hover */
+    background-color: #ff595e; /* Hover effect */
 }
 
 .explore-link h3 {
@@ -149,27 +153,13 @@ a:hover {
 
 /* Footer */
 footer {
-    background-color: #ff595e;
+    background-color: #ff595e; /* Footer color */
     color: white;
     text-align: center;
     padding: 30px 0;
-    border-top: 5px solid #8ac926;
 }
 
 footer p {
     margin: 0;
     font-size: 1.2rem;
-}
-
-/* Animations */
-@keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {
-        transform: translateY(0);
-    }
-    40% {
-        transform: translateY(-20px);
-    }
-    60% {
-        transform: translateY(-10px);
-    }
 }
