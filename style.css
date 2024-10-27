@@ -4,12 +4,12 @@ body {
     margin: 0;
     padding: 0;
     color: #333;
-    background-color: #fff5e6; /* Light background to keep things fresh */
+    background: linear-gradient(to bottom right, #ffcc00, #ff4f00); /* Bright gradient background */
     line-height: 1.6;
 }
 
 h1, h2, h3 {
-    color: #ff595e; /* Bright red-pink for headers */
+    color: #fff; /* White for headers for better contrast */
     font-weight: bold;
 }
 
@@ -25,12 +25,13 @@ a:hover {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(45deg, #ffca3a, #8ac926); /* Bold gradient background */
+    background: linear-gradient(45deg, rgba(255, 202, 58, 0.8), rgba(138, 201, 38, 0.8)); /* Bold gradient background */
     color: white;
     text-align: center;
     padding: 100px 20px;
     margin-bottom: 50px;
     border-bottom: 5px solid #1982c4; /* Adds a striking bottom border */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Adds shadow for depth */
 }
 
 .hero h1 {
@@ -62,7 +63,7 @@ a:hover {
 
 /* Why Movement Matters Section */
 .why-movement-matters {
-    background-color: #ffca3a;
+    background-color: rgba(255, 202, 58, 0.9);
     padding: 50px 20px;
     text-align: center;
     border-top: 5px solid #1982c4;
@@ -108,7 +109,7 @@ a:hover {
 
 /* Explore Pages Section */
 .explore-pages {
-    background-color: #8ac926;
+    background-color: rgba(138, 201, 38, 0.9);
     padding: 60px 20px;
     color: white;
     text-align: center;
